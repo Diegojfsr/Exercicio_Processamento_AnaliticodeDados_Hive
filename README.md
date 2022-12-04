@@ -1,7 +1,7 @@
 
 <em>
   <h1> 
-    Sejam bem-vindos ao meu Processamento Analtico de Dados e Hive. 
+    Sejam bem-vindos ao meu Processamento Analitico de Dados e Hive. 
   </h1>
 </em> 
 
