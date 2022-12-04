@@ -11,7 +11,7 @@
 
 
 <h2> 🎯 Objetivo </h2>
-Utilizar o Processamento Analtico de Dados e Hive para resolver os problemas abaixo.<br>
+Utilizar o Processamento Analitico de Dados e Hive para resolver os problemas abaixo.<br>
   1. Selecione a data de aquisição, o modelo e a diária de todos os veículos.<br>
   2. Selecione todos os veículos cujo o status seja Disponivel e a diária seja R$ 1600 ou mais.<br>
   3. Selecione todas as locações ordenadas por data de locação.<br>
