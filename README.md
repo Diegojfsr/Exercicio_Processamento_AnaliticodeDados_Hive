@@ -37,7 +37,7 @@ Utilizar o Processamento Analtico de Dados e Hive para resolver os problemas aba
 <h2 dir="auto"> 🔗 Links Úteis </h2>
 <ul dir="auto">
   
-  <li><a href="https://router.vuejs.org/"> Documentação Vue Router. </a></li>
+  <li><a href="https://"> Acessar. </a></li>
 
   
 </ul>
@@ -45,7 +45,7 @@ Utilizar o Processamento Analtico de Dados e Hive para resolver os problemas aba
 <h2 dir="auto"> 🔗 Repositórios Úteis </h2>
 <ul dir="auto">
   
-  <li><a href="https://github.com/Leonardo-Lourenco/login-logout-vuejs-firebase"> Leonardo Lourenco. </a></li>
+  <li><a href="https://"> Acessar </a></li>
 
   
 </ul>
@@ -56,7 +56,7 @@ Utilizar o Processamento Analtico de Dados e Hive para resolver os problemas aba
 
 <h2 dir="auto"> 📺 Videos Úteis </h2>
 <ul dir="auto">
-<li><a href="https://www.youtube.com/watch?v=HrJBHCiC3VA"> Lista de tarefas usando VueJS </a></li>
+<li><a href="https://"> Acessar </a></li>
 
 
 </ul>
