@@ -37,7 +37,7 @@ Utilizar o Processamento Analitico de Dados e Hive para resolver os problemas ab
 <h2 dir="auto"> 🔗 Links Úteis </h2>
 <ul dir="auto">
   
-  <li><a href="https://"> Acessar. </a></li>
+  <li><a href="http://sqlfiddle.com/"> Testar Codigos SQL OnLine </a></li>
 
   
 </ul>
