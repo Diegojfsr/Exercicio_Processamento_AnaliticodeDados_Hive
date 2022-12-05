@@ -1,0 +1,95 @@
+Processamento Analitico de Dados e Hive 
+
+
+
+
+-- 1- Selecione a data de aquisição, o modelo e a diária de todos os veículos.
+SELECT dataaquisicao, modelo, diaria FROM veiculos;
+-- --------------------------------------------------------------------------------------------------
+
+-- 2- Selecione todos os veículos cujo o status seja Disponivel e a diária seja R$ 1600 ou mais.
+SELECT * FROM veiculos WHERE (status = 'Disponivel') AND (diaria >= 1600);
+-- --------------------------------------------------------------------------------------------------
+
+-- 3- Selecione todas as locações ordenadas por data de locação.
+SELECT * FROM locacao ORDER BY datalocacao;
+-- --------------------------------------------------------------------------------------------------
+
+-- 4- Selecione o maior valor de locação.
+SELECT MAX (total) FROM locacao;
+-- --------------------------------------------------------------------------------------------------
+
+-- 5- Selecione todos os veículos que possuem BMW no nome.
+SELECT * FROM veiculos WHERE modelo LIKE '%bmw%';
+-- --------------------------------------------------------------------------------------------------
+
+-- 6- Selecione a data e o nome do despachante de todas as locações.
+SELECT
+   locacao.datalocacao,
+   despachantes.nome
+FROM
+   locacao
+INNER JOIN
+   despachantes 
+ON 
+   locacao.iddespachante = despachantes.iddespachante;
+-- --------------------------------------------------------------------------------------------------
+
+-- 7- Insira um despachante cujo ID é 11, nome 'José Vilela', status 'Ativo' e filial de 'Muriaé'.
+INSERT INTO despachantes (iddespachante, nome, status, filial)
+VALUES
+(11,'José Vilela','Ativo','Muriaé');
+
+-- --------------------------------------------------------------------------------------------------
+
+-- 8- Repita a consulta da questão 6, porém agora o despachante José Vilela também deve aparecer no resultado com o valor da data da locação NULL.
+SELECT
+   locacao.datalocacao,
+   despachantes.nome
+FROM
+   locacao
+INNER JOIN
+   despachantes 
+ON 
+   locacao.iddespachante = despachantes.iddespachante
+WHERE
+   despachantes.nome = 'jose'
+   despachantes.nome LIKE '%José%'
+
+-- --------------------------------------------------------------------------------------------------
+
+-- 9- Selecione os modelos dos veículos e a soma total de locação por modelo de veículo.
+
+SELECT 
+  veiculos.modelo, count(locacao.total)
+FROM 
+  veiculos
+LEFT JOIN 
+  locacao
+ON 
+  veiculos.idveiculo = locacao.idveiculo
+GROUP BY 
+  veiculos.idveiculo
+
+-- --------------------------------------------------------------------------------------------------
+
+-- 10- Selecione os modelos de veículos, o mês e o ano de locação.
+
+SELECT
+   veiculos.modelo,
+   locacao.datalocacao
+FROM
+   veiculos
+INNER JOIN
+   locacao 
+ON 
+   veiculos.idveiculo = locacao.idveiculo;
+
+
+
+
+
+
+
+
+
